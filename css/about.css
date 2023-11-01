@@ -1,0 +1,38 @@
+/*--------- About ----------*/
+.about-content .about-item {
+    width: 30%;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 45px 15px;
+}
+
+.about-content .about-item.mg-item {
+    margin: 0 2%;
+}
+
+.about-content .about-item.mg-item-left {
+    margin-left: 3%;
+}
+
+.about-item .icon {
+    color: var(--mainColor);
+}
+
+.about-item .about-title {
+    transition: color 0.5s;
+}
+
+.about-content .about-desc {
+    line-height: 1.5;
+    color: rgba(108, 108, 108, 0.696);
+    font-size: 17px;
+}
+
+.about-content .item-more {
+    color: var(--mainColor);
+}
+
+.about-item:hover .about-title {
+    color: white;
+}
+

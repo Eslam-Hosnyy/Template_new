@@ -1,0 +1,111 @@
+/* ------------Get---------*/
+.get .get-content {
+    overflow: hidden;
+    width: 85%;
+    margin: auto;
+}
+
+.get-content .get-item {
+    width: 30%;
+    float: left;
+}
+
+.get-content .get-item.mg {
+    margin: 0 5%;
+}
+
+.get-item .get-list {
+    list-style: none;
+    text-align: center;
+}
+
+.get-list li {
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.get-list li i {
+    color: var(--mainColor);
+}
+
+.get-list li span {
+    text-transform: capitalize;
+    color: rgb(167, 166, 166);
+}
+
+.get-item.mg .get-list li span {
+    text-transform: lowercase;
+}
+
+.get-list li h3 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.get-form {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.get-form .name-email {
+    overflow: hidden;
+}
+
+.name-email .name,
+.name-email .email,
+.get-form .subject,
+.get-form .message {
+    float: left;
+    height: 40px;
+    font-size: 17px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 2px solid #f9f9f9;
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 1px 1px #f5f4f4;
+    padding: 0px 0px 0px 10px;
+}
+.name-email .name:focus,
+.name-email .email:focus,
+.get-form .subject:focus,
+.get-form .message:focus {
+    outline: none;
+    box-shadow: 1px 1px 1px 1px var(--mainColor);
+}
+.name-email .name,
+.name-email .email {
+    width: 49%;
+
+}
+
+.name-email .email {
+    margin-left: 1.5%;
+}
+
+.get-form .subject,
+.get-form .message {
+    width: 100%;
+}
+
+.get-form .message {
+    padding-top: 10px;
+    height: 80px;
+    margin-bottom: 25px;
+
+}
+
+.get-form .send {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--mainColor);
+    font-size: 15px;
+    cursor: pointer;
+}
+

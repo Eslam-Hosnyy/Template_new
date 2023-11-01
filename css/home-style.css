@@ -1,0 +1,205 @@
+/*------------ Common Css--------------*/
+:root{
+    --mainColor : #6195ff;
+    --blurWhite : #e8e8e8;
+}
+.clear {
+    clear: both;
+}
+
+.hover-opacity {
+    transition: opacity 1s;
+}
+
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+ul{
+    list-style: none;
+}
+.pd-y {
+    padding: 120px 0;
+}
+
+.ltr-effect,
+.tb-effect {
+    position: relative;
+}
+
+.ltr-effect:after,
+.tb-effect:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #333;
+}
+
+.tb-effect:after {
+    height: 0%;
+    transition: height 0.5s;
+}
+
+.ltr-effect:after {
+    width: 0%;
+    transition: width 0.5s;
+}
+
+.tb-effect:hover:after {
+    height: 100%;
+}
+
+.ltr-effect:hover:after {
+    width: 100%;
+}
+
+/*----- General CSS Styles----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: montserrat, sans-serif;
+}
+
+button {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .section-line {
+    display: block;
+    background-color: var(--mainColor);
+    width: 35px;
+    height: 5px;
+    margin: 0 auto 70px auto;
+}
+
+/*----- Header ----- */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #1c1d215a;
+}
+
+.header .logo {
+    width: 40%;
+    float: left;
+}
+
+.header .logo img {
+    margin-top: 15px;
+    width: 20%;
+}
+
+.header .nav {
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+
+.header .nav>li {
+    display: inline-block;
+    text-align: right;
+}
+
+.header .nav>li>a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 30px 15px;
+    font-size: 14px;
+}
+.header .nav>li>a:after,
+.header .nav>li>a.active:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--mainColor);
+    margin-top: 2px;
+    transition: width 0.6s;
+}
+
+.header .nav>li>a:after {
+    width: 0%;
+
+}
+
+.header .nav li>a:hover:after {
+    width: 100%;
+}
+
+.header .nav li>a.active:after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    list-style: none;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: var(--mainColor);
+    left: -86%;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}

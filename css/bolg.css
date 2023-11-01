@@ -1,0 +1,55 @@
+/* ----- Blog------*/
+.blog .blog-content {
+    overflow: hidden;
+}
+
+.blog-content .blog-item {
+    width: 30%;
+    float: left;
+    background-color: white;
+}
+
+.blog-item .blog-img img {
+    width: 100%;
+}
+
+.blog-content .blog-item.mg {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.blog-item .blog-list {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.blog-list li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.blog-item .blog-info {
+    padding: 20px;
+}
+
+.blog-info .icon {
+    color: var(--mainColor);
+}
+
+.blog-info .blog-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.blog-info .blog-desc {
+    color: rgb(170, 170, 170);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.blog-info .blog-link {
+    color: var(--mainColor);
+}
+

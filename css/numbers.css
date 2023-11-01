@@ -1,0 +1,37 @@
+/*------------- Numbers -----------*/
+.numbers {
+    position: relative;
+    background-image: url(../images/Background/background2.jpg);
+    height: 250px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.numbers-items {
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.numbers-items .numbers-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.numbers-items .numbers-item .icon {
+    color: #528bff;
+    margin-bottom: 15px;
+}
+
+.numbers-item .numbers-title {
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 3px;
+}
+
+.numbers-item .numbers-text {
+    color: white;
+    font-size: 15px;
+}
+

@@ -1,0 +1,41 @@
+/*------------ Offer ---------------*/
+.offer-content {
+    overflow: hidden;
+}
+
+.offer-content .offer-item {
+    width: 32%;
+    float: left;
+    border: 1px solid #e8e8e8;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.offer-content .offer-item.mg {
+    margin: 0 2%;
+}
+
+.offer-content .offer-item .icon {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    color: var(--mainColor);
+}
+
+.offer-content .offer-desc {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: rgba(108, 108, 108, 0.696);
+}
+
+.offer-content .offer-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color 0.5s;
+}
+
+.offer-item:hover .offer-title {
+    color: white;
+}
+
